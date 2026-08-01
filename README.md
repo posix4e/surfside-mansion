@@ -13,7 +13,9 @@ npm run dev
 
 ## Deploy
 
-Hosted on Cloudflare Workers (static assets). Deploys via [Wrangler](https://developers.cloudflare.com/workers/wrangler/):
+Hosted on Cloudflare Workers (static assets) at [residence.fralex.art](https://residence.fralex.art).
+
+Every push to `main` deploys automatically via GitHub Actions (`.github/workflows/deploy.yml`), using the `CLOUDFLARE_API_TOKEN` repo secret. To deploy manually instead:
 
 ```sh
 npm run deploy
